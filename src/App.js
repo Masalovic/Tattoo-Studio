@@ -1,0 +1,24 @@
+import React from "react";
+import Home from "./organisms/Home";
+import Portfolio from "./organisms/Portfolio";
+import Navbar from "./molecules/Navbar";
+import About from "./organisms/About";
+import Contact from "./organisms/Contact";
+import Banner from "./organisms/Banner";
+import BannerUpper from "./organisms/BannerUpper";
+
+function App() {
+  return (
+    <div className="content">
+      <Home />
+      <Navbar />
+      {/* <BannerUpper /> */}
+      <About />
+      <Banner />
+      <Portfolio />
+      <Contact />
+    </div>
+  );
+}
+
+export default App;
