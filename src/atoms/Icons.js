@@ -10,11 +10,6 @@ const Icons = () => {
         </a>
       </li>
       <li>
-        <a href="#twitter">
-          <i className="fab fa-twitter icon"></i>
-        </a>
-      </li>
-      <li>
         <a href="#linkedin">
           <i className="fab fa-linkedin-in icon"></i>
         </a>

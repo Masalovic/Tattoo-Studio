@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import aboutImage from "../assets/15.jpg";
 import "../styles/Home.scss";
 import Navbar from "../molecules/Navbar";
+import MobileNav from "../atoms/MobileNav";
 
 const Home = () => {
   const [expanded, setExpanded] = useState(false);
@@ -24,13 +25,14 @@ const Home = () => {
   return (
     <div>
       <Navbar />
+      <MobileNav />
       <div className="container">
         <div className="container-inner">
           <div className="main-content">
             <div className="main-headings" id="main-headings-js">
               <p id="by-line">
-                Dobrodošli u Tattoo Studio Rakac - Mesto na kom se umetnost sreće sa
-                kožom!
+                Dobrodošli u Tattoo Studio Rakac - Mesto na kom se umetnost
+                sreće sa kožom!
               </p>
 
               <div className="heading">
@@ -66,7 +68,8 @@ const Home = () => {
                 Naši umetnici su vešti u različitim stilovima tetovaža,
                 uključujući tribale, old school, fine line i mnoge druge. Bilo
                 da je u pitanju tvoja prva tetovaža ili dodatak postojećoj
-                kolekciji, mi smo tu da pomognemo i budemo uz tebe, od početka do kraja puta.
+                kolekciji, mi smo tu da pomognemo i budemo uz tebe, od početka
+                do kraja puta.
               </p>
             </div>
           </div>
