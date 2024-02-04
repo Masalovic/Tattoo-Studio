@@ -4,7 +4,19 @@ $total-lines: 6;
 $left-offset: 29px;
 $clip-height: 50px;
 $line-height: $clip-height - 5px;
+#home {
+  display: flex;
+  justify-content: center;
+  .banner-upper {
+    background-image: url("../assets/banner.png");
+    background-repeat: no-repeat;
 
+    background-size: contain;
+    width: 70%;
+    height: 35vh;
+    margin: 5rem 0 10rem 0;
+  }
+}
 .banner {
   height: 80vh;
   align-items: center;
@@ -87,7 +99,12 @@ $line-height: $clip-height - 5px;
   }
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 900px) {
+  #home .banner-upper {
+    margin-bottom: 2rem;
+    margin-top: -4rem;
+  }
+
   .banner {
     height: 70vh;
     .texts .text-bottom h2 {
@@ -100,6 +117,10 @@ $line-height: $clip-height - 5px;
   }
 }
 @media screen and (max-width: 600px) {
+  #home .banner-upper {
+    width: 90%;
+    margin-bottom: 2rem;
+  }
   .banner {
     height: 50vh;
     .texts .text-bottom h2 {

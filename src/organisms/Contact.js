@@ -43,10 +43,7 @@ const Contact = () => {
       </div>
 
       <div className="contact-banner">
-        <p>
-          Tattoo Studio Rakac | Tattoo Beograd | Sva prava zadržana | Beograd,
-          2024.
-        </p>
+        <p>COPYRIGHT © 2024 IZRADA SAJTA VORTEX-MK | SVA PRAVA ZADRŽANA</p>
       </div>
     </div>
   );

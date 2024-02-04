@@ -10,11 +10,7 @@ const BannerUpper = () => {
   //         AOS.refresh();
   //     }, []);
 
-  return (
-    <div className="banner-upper">
-      <i className="fa-thin fa-bolt-lightning"></i>
-    </div>
-  );
+  return <div className="banner-upper"></div>;
 };
 
 export default BannerUpper;

@@ -10,11 +10,11 @@
   justify-content: flex-end;
 
   .contact-heading {
-    font-size: 400%;
+    font-size: 300%;
     letter-spacing: 0.2em;
     color: var(--sidebar-text-color);
     margin-bottom: 12rem;
-    font-family: "Yanone Kaffeesatz", sans-serif;
+    font-family: "Montserrat", sans;
   }
   .contact-container {
     width: 90vw;
@@ -67,6 +67,8 @@
         .details .text-two {
           font-size: 18px;
           color: white;
+
+          font-family: "Quicksand", sans-serif;
         }
       }
       .right-side {
@@ -90,6 +92,7 @@
           border: none;
           outline: none;
           font-size: 18px;
+          font-family: "Quicksand", sans-serif;
           background: #f0f1f8;
           border-radius: 6px;
           padding: 0 15px;
@@ -108,6 +111,8 @@
         .button input[type="button"] {
           color: #fff;
           font-size: 20px;
+
+          font-family: "Quicksand", sans-serif;
           outline: none;
           border: none;
           padding: 8px 16px;
@@ -127,14 +132,16 @@
     display: flex;
     justify-content: center;
     width: 100vw;
-    font-size: 18px;
+    font-size: 12px;
+
+    font-family: "Montserrat", sans;
     background: #3a6078;
   }
 }
 
 @media (max-width: 1150px) {
   #contact .contact-heading {
-    margin-bottom: 7rem;
+    margin-bottom: 9rem;
   }
   #contact .contact-container .contact-content .left-side .details .text-one,
   #contact .contact-container .contact-content .left-side .details .text-two {
@@ -152,8 +159,8 @@
 
 @media (max-width: 850px) {
   #contact .contact-heading {
-    margin-bottom: 9rem;
-    font-size: 300%;
+    margin-bottom: 12rem;
+    font-size: 200%;
   }
   #contact .contact-container .contact-content .left-side .details .text-one,
   #contact .contact-container .contact-content .left-side .details .text-two {
@@ -174,11 +181,11 @@
 
 @media (max-width: 550px) {
   #contact .contact-heading {
-    margin-bottom: 0;
-    font-size: 200%;
+    margin-bottom: 1rem;
+    font-size: 150%;
   }
   #contact .contact-container {
-    padding: 30px 30px 30px 30px;
+    padding: 0 0 20px 0;
     .contact-content {
       display: flex;
       flex-direction: column;
@@ -198,6 +205,7 @@
     width: 100vw;
     p {
       font-size: 12px;
+      text-align: center;
     }
   }
 }
@@ -205,19 +213,33 @@
 @media (max-width: 375px) {
   #contact .contact-heading {
     margin-bottom: 0;
-    font-size: 180%;
+    margin-top: 2rem;
+    font-size: 110%;
   }
   #contact .contact-container {
-    padding: 20px 20px 20px 20px;
+    padding: 0px 20px 20px 20px;
     .contact-content {
-      .left-side .details i {
-        font-size: 20px;
+      .left-side .details {
+        .text-two,
+        .text-one {
+          font-size: 12px;
+        }
+        i {
+          font-size: 20px;
+        }
       }
-      .right-side .input-box input {
-        font-size: 12px;
+      .right-side .input-box {
+        height: 40px;
+        input {
+          font-size: 12px;
+        }
+
+        .button input[type="button"] {
+          font-size: 10px;
+        }
       }
-      .button input[type="button"] {
-        font-size: 12px;
+      .right-side .message-box {
+        min-height: 60px;
       }
     }
   }

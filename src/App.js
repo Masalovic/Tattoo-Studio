@@ -5,6 +5,7 @@ import Navbar from "./molecules/Navbar";
 import About from "./organisms/About";
 import Contact from "./organisms/Contact";
 import Banner from "./organisms/Banner";
+import BannerUpper from "./organisms/BannerUpper";
 
 function App() {
   return (
@@ -13,6 +14,10 @@ function App() {
         <Home />
       </section>
       <Navbar />
+      <section id="home">
+        <BannerUpper />
+      </section>
+
       <section id="about">
         <About />
       </section>
